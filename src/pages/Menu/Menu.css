@@ -1,0 +1,109 @@
+.menu {
+    flex-direction: column;
+}
+
+.menu-header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.menu-header h2 {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    margin-bottom: 3rem;
+}
+
+.menu-coffee {
+    margin-bottom: 6rem;
+}
+
+.menu-coffee,
+.menu-bakery {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    width: 100%;
+}
+
+.menu-coffee-basic h4,
+.menu-coffee-spec h4,
+.menu-bakery-basic h4,
+.menu-bakery-spec h4 {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menu-coffee-basic,
+.menu-coffee-spec,
+.menu-bakery-basic,
+.menu-bakery-spec
+ {
+    width: 50%;
+}
+
+@media screen and (max-width: 750px) {
+    .menu-header {
+        margin-bottom: 3rem;
+    }
+
+    .menu-header h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    h3 {
+        margin-bottom: 2rem;
+    }
+
+    .menu-coffee {
+        margin-bottom: 3rem;
+    }
+
+    .menu-coffee,
+    .menu-bakery {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
+
+    .menu-coffee-basic,
+    .menu-coffee-spec,
+    .menu-bakery-basic,
+    .menu-bakery-spec {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .menu-header {
+        margin-bottom: 2rem;
+    }
+
+    .menu-header h2 {
+        margin-bottom: 1rem;
+    }
+
+    h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .menu-coffee {
+        margin-bottom: 2rem;
+    }
+
+    .menu-coffee,
+    .menu-bakery {
+        gap: 2rem;
+    }
+
+    .menu-coffee-basic h4,
+    .menu-coffee-spec h4,
+    .menu-bakery-basic h4,
+    .menu-bakery-spec h4 {
+        margin-bottom: 1.5rem;
+    }
+
+}

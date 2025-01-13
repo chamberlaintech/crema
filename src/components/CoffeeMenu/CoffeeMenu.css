@@ -1,0 +1,43 @@
+.coffeemenu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.coffeemenu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.coffeemenu-header-name {
+    margin-right: 2rem;
+}
+
+.coffeemenu-header-price {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+@media screen and (max-width: 750px) {
+    .coffeemenu {
+        margin-bottom: 1.5rem;
+    }
+
+    .coffeemenu-header {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .coffeemenu {
+        margin-bottom: 1rem;
+    }
+
+    .coffeemenu-header {
+        margin-bottom: 0.25rem;
+    }
+}

@@ -1,0 +1,131 @@
+.specialties {
+    flex-direction: column;
+}
+
+.specialties h2 {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.specialties-coffee {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.specialties-coffee-image {
+    flex: 1;
+    width: 100%;
+    margin: 0 4rem 0 0;
+}
+
+.specialties-coffee-image img {
+    max-width: 450px;
+    height: auto;
+    max-height: 500px;
+    border-radius: var(--borderRadius);
+    border: var(--imageBorder);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: var(--imageShadow);
+}
+
+.specialties-coffee-image img:hover {
+    box-shadow: var(--imageShadowHover);
+    transform: translateY(-5px);
+}
+
+.specialties-coffee-text {
+    flex-direction: column;
+}
+
+.specialties-coffee-text h4 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.specialties-bakery {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4rem;
+}
+
+.specialties-bakery-image {
+    flex: 1;
+    width: 100%;
+    margin: 0 0 0 4rem;
+}
+
+.specialties-bakery-image img {
+    max-width: 450px;
+    height: auto;
+    max-height: 500px;
+    border-radius: var(--borderRadius);
+    border: var(--imageBorder);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    box-shadow: var(--imageShadow);
+}
+
+.specialties-bakery-image img:hover {
+    box-shadow: var(--imageShadowHover);
+    transform: translateY(-5px);
+}
+
+.specialties-bakery-text {
+    flex-direction: column;
+}
+
+.specialties-bakery-text h4 {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.specialties-button {
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+
+    .specialties h2 {
+        margin-bottom: 3rem;
+    }
+
+    .specialties-coffee {
+        flex-direction: column-reverse;
+    }
+
+
+    .specialties-bakery {
+        flex-direction: column;
+    }
+
+    .specialties-coffee-image {
+        margin: 2rem 0 0 0;
+    }
+
+    .specialties-bakery-image {
+        margin: 0 0 2rem 0;
+    }
+
+    .specialties-coffee-text h4,
+    .specialties-bakery-text h4 {
+        margin-bottom: 2rem;
+    }
+
+    .specialties-button {
+        margin-top: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .specialties h2 {
+        margin-bottom: 2rem;
+    }
+
+    .specialties-button {
+        margin-top: 1rem;
+    }
+}
