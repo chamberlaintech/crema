@@ -7,11 +7,13 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Error from "./pages/Error/Error";
 import Footer from "./components/Footer/Footer";
+import ScrollTop from "./components/ScrollTop/ScrollTop";
 
 function App() {
   return (
     <div className="flex-wrapper">
       <Navbar />
+      <ScrollTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu" element={<Menu />} />
